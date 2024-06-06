@@ -16,3 +16,15 @@ document.getElementById("open-popup-btn").addEventListener("click",function() {
         }
     }
 );
+document.getElementById("open-btn").addEventListener("click",function() {
+	const emailInput = document.getElementById('mail');
+        const email = emailInput.value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        
+        if (emailPattern.test(email)) {
+            alert('Thank You for contacting to us look out to your mail for daily updates regarding us.');
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    }
+);  

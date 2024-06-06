@@ -515,8 +515,8 @@
                 <img src="assets/p1.jpeg" alt="">
                 
                 <div class="content">
-                    <p>Great service and UI. Absloutely renting their bikes for my next movie</p>
-                    <h3>christoper nolen</h3>
+                    <p>The booking process was seamless, and the bike was in excellent condition. The staff was super friendly and even provided some great local route suggestions. Highly recommend for anyone looking to explore the city on two wheels!</p>
+                    <h3>John P</h3>
                     <div class="stars">
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -532,8 +532,8 @@
                 <img src="assets/p2.jpeg" alt="">
                 
                 <div class="content">
-                    <p>Great service and UI. Absloutely renting their bikes for my next movie</p>
-                    <h3>christoper nolen</h3>
+                    <p>The website was easy to navigate, and the rental rates were very reasonable. The bike performed perfectly during my weekend trip, and returning it was a breeze. Will definitely use their service again!</p>
+                    <h3>Michael B</h3>
                     <div class="stars">
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -548,8 +548,8 @@
                 <img src="assets/p3.jpeg" alt="">
                 
                 <div class="content">
-                    <p>Great service and UI. Absloutely renting their bikes for my next movie</p>
-                    <h3>christoper nolen</h3>
+                    <p>Great service and fantastic bikes! I rented a mountain bike for a day trip, and it exceeded my expectations. The staff at Vroom was knowledgeable and made sure I had everything I needed for a safe ride. Highly satisfied!</p>
+                    <h3>Emily W</h3>
                     <div class="stars">
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -582,8 +582,8 @@
                 <img src="assets/p5.jpeg" alt="">
                 
                 <div class="content">
-                    <p>Great service and UI. Absloutely renting their bikes for my next movie</p>
-                    <h3>christoper nolen</h3>
+                    <p>My experience with Vroom.com was top-notch. The online booking system was straightforward, and I was able to pick up my bike in no time. The bike was clean, well-maintained, and perfect for exploring the area. A+ service all around</p>
+                    <h3>Leela K</h3>
                     <div class="stars">
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -598,8 +598,8 @@
                 <img src="assets/p6.jpeg" alt="">
                 
                 <div class="content">
-                    <p>Great service and UI. Absloutely renting their bikes for my next movie</p>
-                    <h3>christoper nolen</h3>
+                    <p>GI've rented bikes from various places, but Vroom.com stands out as the best. The quality of the bikes and the customer service are unmatched. The staff was very accommodating, and the whole process was hassle-free. Would recommend to anyone visiting the city!</p>
+                    <h3>varun D</h3>
                     <div class="stars">
                         <i class="fas fa-star"> </i>
                         <i class="fas fa-star"> </i>
@@ -624,13 +624,22 @@
         <form action="">
             <h3>get in touch</h3>
             <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="text" placeholder="number" class="box">
-            
+            <input type="email" placeholder="email" class="box" id="mail">
+            <input type="text" name="number" placeholder="Number" class="box" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
             <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
+            <input type="submit" value="send message" class="btn" id="open-btn" onclick="">
         </form>
     </div>
+
+    <div id="contact-component"></div>
+
+    <!-- React component code -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script type="module">
+        import Contact from './contact.js'; // Ensure correct path to contact.js
+        ReactDOM.render(React.createElement(Contact), document.getElementById('contact-component'));
+    </script>
 </section>
 <!-- contact fin -->
 <section class="footer">
@@ -677,6 +686,7 @@
 </section>
 <div class="end">Made by Group-15 | All rights reserved &copy</div>
 <!-- footer ends -->
+
 <!-- for chat bot -->
 
 <div class="chatbot">
@@ -685,8 +695,6 @@
     
 </div>
 <div class="gojo"><img src="../proj/assets/gojo.jpeg" id="gojo" onclick=""></div>
-
-
-
 </body>
 </html>
+
