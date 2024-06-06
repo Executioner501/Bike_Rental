@@ -1,4 +1,4 @@
-/* Add these styles to your existing chat.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -112,7 +112,6 @@ body {
     background-color: #0056b3;
 }
 
-/* Typing animation styles */
 .typing-indicator {
     display: inline-block;
     width: 1rem;

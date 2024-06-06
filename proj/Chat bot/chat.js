@@ -1,5 +1,13 @@
+
+var name=localStorage.getItem("username")
+localStorage.removeItem("username")
 window.onload = function() {
-    display('Hello. WELCOME TO VROOM<br>I am your personal assistant GOJO. <br>Please select one of the buttons below to get started.');
+    if (name==''){
+    display('Hello . WELCOME TO VROOM<br>I am your personal assistant GOJO. <br>Please select one of the buttons below to get started.');
+    }
+    else{
+        display('Hello '+name+'. WELCOME TO VROOM<br>I am your personal assistant GOJO. <br>Please select one of the buttons below to get started.');
+    }
 };
 
 function display(message, isTyping = false) {
